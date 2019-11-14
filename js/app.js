@@ -152,6 +152,7 @@ function appendMovies(movies) {
   document.querySelector('#movie-container').innerHTML = htmlTemplate;
 }
 
+
 // append favourite movies to the DOM
 function appendFavMovies(favMovieIds) {
   document.querySelector('#fav-movie-container').innerHTML = "";
@@ -177,6 +178,9 @@ function addToFavourites(movieId) {
   }, {
     merge: true
   });
+  for (let favorite of favorites) {
+    if (`#${movie.id}` === movie.getA)
+  }
 }
 
 // removes a given movieId to the favMovies array inside _currentUser

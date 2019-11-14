@@ -55,13 +55,13 @@
       <label for="name">Name</label>
       <input type="text" id="name" placeholder="Type your name" required>
       <label for="mail">Mail</label>
-      <input type="email" id="mail" placeholder="Type your mail" required>
+      <input type="email" id="mail" placeholder="mail@example.com" required>
       <label for="birthdate">Birthdate</label>
-      <input type="text" id="birthdate" placeholder="Type your birthdate" required>
+      <input type="text" id="birthdate" placeholder="dd/mm/yyyy" required>
       <label for="hairColor">Hair Color</label>
       <input type="text" id="hairColor" placeholder="Type your hair color" required>
       <label for="hairColor">Profile Image</label>
-      <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
+      <input class="add-img" type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
       <img id="imagePreview" class="image-preview">
       <button type="button" name="button" onclick="updateUser()">Save</button>
     </form>
